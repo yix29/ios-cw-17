@@ -13,14 +13,14 @@ import UIKit
 
 // MARK: هذي الداله تقوم بضرب رقمين و ترجع الناتج
 
-func Multiplication(  number1 : Int ,  number2 : Int)
+func multiplication(  number1 : Int ,  number2 : Int)
 {
     
     return number1 * number2
 }
-// MARK:   بما يناسب صيغه هذا الاستدعاء Multiplication قم بتعديل  الداله
+// MARK:   بما يناسب صيغه هذا الاستدعاء multiplication قم بتعديل  الداله
 
-Multiplication(5,7)
+multiplication(5,7)
 
 
 
