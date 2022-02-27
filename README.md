@@ -6,6 +6,9 @@
 
 ## في هذا التمرين سنقوم بعمل صور الإيموجي كما هو موضح بالصورة.
 
+<p align="center">
+<img width="285" alt="emoji" src="https://user-images.githubusercontent.com/60436597/155885124-1c3c03d9-eded-42fc-9270-f9d02e1d60c4.png">
+</p>
 
 
 ### عمل كود للمصفوفة :
