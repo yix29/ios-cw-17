@@ -1,83 +1,69 @@
+# مصفوفة من الكائنات
+
+## * عمل struct
+
+#### تعريف struct بوضع الاسم ٫ بهذه الطريقة 
+
+```
+struct NewStruct {
+                 ……
+                 ……
+                }
+```
 
 
-# جملة الدوران ForEach
 
-  
 
-## في هذا التمرين سنقوم بعمل صور الإيموجي كما هو موضح بالصورة.
+## * عمل الخصائص properties لل struct
+
+
+#### طريقة عمل الخصائص هكذا ٫ ووضع النوع لكل properties
+
+```
+struct NewStruct {
+         var prop1 : String
+         var prop2 : Int
+           }
+```
+
+
+
+## عمل المصفوفة array
+
+
+#### تعريف متغير ليكون مصفوفة تحتوي على كائنات من struct التي تم تعريفها ٫ بهذه الطريقة 
+
+
+
+```
+var NewArray = [NewStruct(prop1: "a", prop2: 1), NewStruct(pror1: "b", pror2: 2)]
+```
+
+
+
+---
+
+#### تمرين
+
+
+### قم بعمل fork من رابط gitHub .
+
+#### 1. قم بإنشاء تطبيق جديد في XCode
+#### 2. قم بعمل struct بإسم CoronaDetails 
+#### 3. قم بعمل خصائص لهذا struct بهذه الاسماء كمتغيرات :
+
+ <p align="right"> 
+fullName - area - numberOfDoses
+</p>
+
+
+
+#### 4. قم بعمل متغير كمصفوفة من نوع الكائن لهذا ال struct بإسم CoronaNewCases
+#### 5. قم بعرض هذه الأسماء على صفحة التطبيق كما هو موضح في الصورة
+### ملاحظة : بالمرفق ستجد الصورة الخضراء كورونا . او يمكنك اضافة أي صورة أخرى
+
+
 
 <p align="center">
-<img width="285" alt="emoji" src="https://user-images.githubusercontent.com/60436597/155885124-1c3c03d9-eded-42fc-9270-f9d02e1d60c4.png">
+<img width="291" alt="corona App" src="https://user-images.githubusercontent.com/60436597/155864966-0d2950db-0ba4-41fa-8407-1fac1be46ea9.png">
 </p>
-
-
-### عمل كود للمصفوفة :
-
-```
-var emooji = ["your emojis here"] 
-```
-<p dir="rtl">
-
-### عمل كود forEach :
-</p>
-
-```
-ForEach(0..<3) { oneEmoji in
-
-Text("\(emooji[oneEmoji])")
-
-}
-```
-
----
-
-
-## تمرين
-
-
-
-### قم بعمل fork من رابط gitHub ، ثم قم بإنشاء تطبيق جديد في XCode.
-### 1. قم بعمل مصفوفة تحتوي على أشكال الإيموجي، ستكون من نوع string.
-
-
-### 2. سيكون هناك ٣ من ForEach و ٣ hstack .وكل ForEach ستكون في hstack ، وهذه الثلاثه ستكون داخل vstack .
-
-
-### 3. طريقة ترتيب العناصر المصفوفه موجوده تحت 
-<p dir="rtl">
-<strong>مساعدة صغيرة :  لإظهار نص الإيموجي بجميع اشكاله، فيجب عمل الدوران بهذه الطريقة .</strong></p>
-
-
-// لعمل الصف الأول للثلاث ٣ ايموجي
-```
-ForEach(0..<3) { oneEmoji in
-
-                Text("\(emooji[oneEmoji])")
-
-}
-```
-
-// لعمل الصف الثاني للثلاث ٣ ايموجي، نغير الدوران نخليه من ٣ إلى أقل من ٦
-
-// لعمل الصف الثالث للثلاث ٣ ايموجي، نغير الدوران نخليه من ٦ إلى أقل من ٩
-
-
----
-
-
-
-## بونس ✨✨✨
-
-
-
-### يمكن عمل واختصار الخطوة الثانية ب اثنان من ForEach في داخل بعض ، أحدهما سيكون عمودي والآخر أفقي.
-
-
-
-### مساعدة صغيرة : لإظهار نص الإيموجي بجميع اشكاله، فيجب إدخال هذه العمليات الحسابية البسيطة.
-
-```
-Text("\(emoji[(horizontalForEach+verticalForEach)+verticalForEach+verticalForEach])")
-```
-
-### حيث ان horizontalForEach هو forEach الافقي ، و verticalForEach هو forEach العمودي.
