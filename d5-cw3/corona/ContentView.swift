@@ -24,38 +24,48 @@ struct ContentView: View {
                 Text("حالات كورونا الجديدة")
                     .font(.system(size: 30, weight: .bold, design: .default))
                     .padding()
+                List(people, id: \.id) {
+                    i in
+                    VStack{
+                        
+                        Text("\(i.fullname)")
+                        
+                        Text("\(i.area)")
+                        
+                        Text("\(i.numberOfDoses)")
+                    }
                 // name of new cases
-                VStack{
-        // الحالة الأولى
-                // الاسم
-               Text("")
-// المنطقة
-                Text("")
-                    // عدد الجرعات
-               Text("")
-
-                Divider()
-                }
-                VStack{
-        // الحالة الثانية
-                // الاسم
-               Text("")
-                // المنطقة
-               Text("")
-    // عدد الجرعات
-               Text("")
-
-                Divider()
-                }
-                VStack{
-              // الحالة الثالثة
-                      // الاسم
-                     Text("")
-                      // المنطقة
-                     Text("")
-          // عدد الجرعات
-                     Text("")
-                }
+//                VStack{
+//        // الحالة الأولى
+//                // الاسم
+//                    Text("\(people[0].fullname)")
+//// المنطقة
+//                    Text("\(people[0].area)")
+//                    // عدد الجرعات
+//                    Text("\(people[0].numberOfDoses)")
+//
+//                Divider()
+//                }
+//                VStack{
+//        // الحالة الثانية
+//                // الاسم
+//               Text("\(people[1].fullname)")
+//                // المنطقة
+//               Text("\(people[1].area)")
+//    // عدد الجرعات
+//               Text("\(people[1].numberOfDoses)")
+//
+//                Divider()
+//                }
+//                VStack{
+//              // الحالة الثالثة
+//                      // الاسم
+//                     Text("\(people[2].fullname)")
+//                      // المنطقة
+//                     Text("\(people[2].area)")
+//          // عدد الجرعات
+//                     Text("\(people[2].numberOfDoses)")
+//                }
                 Spacer()
                 HStack{
                     Text("آخر تحديث ١٥-٣-٢٠٢٢")
